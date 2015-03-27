@@ -52,6 +52,7 @@ public class MainActivity extends ActionBarActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toast.makeText(this,"This is toast",Toast.LENGTH_LONG).show();
         image = (ImageView) findViewById(R.id.image);
         Thread thread = new Thread(new Task());
         thread.start();
